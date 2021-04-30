@@ -1,0 +1,136 @@
+body{
+    background-color: aqua;
+    font-family: 'open sans' sans-serif;
+    
+}
+
+
+.container{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px solid black;
+    /* background-color:rgb(83, 77, 77) ; */
+    margin-left: 350px;
+    margin-top: 20px;
+    border: 2px solid rgb(190, 188, 188);
+    background-color: white;
+    
+  
+
+
+}
+
+/* .container > div { */
+    /* background-color:rgb(83, 77, 77); */
+    /* text-align: center; */
+    /* padding: 10px 0; */
+    /* font-size: 30px; */
+    /* border: 1px solid black; */
+  /* } */
+
+
+#keyboard{
+   
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    border: 2px solid rgb(190, 188, 188);
+   
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    /* background-color: #2196F3; */
+    
+    
+
+}
+
+
+
+.operator, .number ,#clear,.dot{
+    display: grid;
+    width: 60px;
+    margin: 5px;
+    padding: 15px;
+    background-color: rgba(243, 240, 240, 0.904);
+    /* font-weight: bold; */
+    border: none;
+    color: rgb(5, 19, 20);
+    box-shadow: 5px 5px 5px black;
+    text-shadow: 2px 2px 2px black;
+    font-size:30px;
+    /* border-radius: 5px;  */
+
+}
+
+.operator{
+    /* background-color: rgb(241, 233, 107); */
+    /* color: rgb(140, 0, 0); */
+    background-color: rgb(195, 187, 187);
+}
+
+.number{
+    background-color: rgb(240, 234, 234);
+}
+
+
+.dot{
+    background-color: rgb(240, 234, 234);
+}
+
+.operator, .number{
+    cursor: pointer;
+}
+
+.operator:active, .number:active{
+    font-size: 17px;
+}
+.operator:focus, .number:focus{
+    outline: 0;
+}
+
+
+.equal{
+
+    grid-column: 4;
+    grid-row: 2/span 4 ;
+    align-items: center;
+    background-color: #2196F3;
+    color: white;
+    /* background-color: blue; */
+    
+}
+
+
+#result{
+    height: 120px;
+   
+    /* background-color:rgba(255, 255, 255, 0.8); */
+    background-color: white;
+    border: 2px solid rgb(190, 188, 188);
+    font-weight: bold;
+    margin: 20px;
+    font-size: larger;
+}
+
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+
+    /* color: #919191; */
+
+}
+#output{
+    text-align: right;
+    height: 30px;
+    margin: 10px 20px;
+    font-size: 35px;
+    
+   
+
+}
+
